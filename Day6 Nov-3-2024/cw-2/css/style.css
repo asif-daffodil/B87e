@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 200px;
+    height: 200px;
+    background: #333;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    /* z-index: 10; */
+}
+
+.pain {
+    width: max-content;
+    padding: 10px 20px;
+    background: #c33;
+    border-radius: 20px/50%;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main::before {
+    content: attr(data-user);
+    color: #fff;
+    background: #c33;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 20px/50%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

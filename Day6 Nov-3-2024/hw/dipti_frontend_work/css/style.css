@@ -1,0 +1,51 @@
+.nav_list button{
+ border: none;
+ cursor: pointer;
+ margin-left: 20px;
+ border-radius: 10px;
+ padding: 10px;   
+ transition: 1s;
+}
+.nav_list button:hover{
+    background: skyblue;
+}
+marquee{
+    background: skyblue;
+    color: black;
+}
+.owner_img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.main_box{
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 10px;
+}
+.box_button{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: skyblue;
+}
+.banner{
+    width: 100%;
+}
+.contact_page{
+    background: rgb(78, 136, 146);
+}
+input {
+    border: 1px solid #ccc; 
+    padding: 5px;
+    border-radius: 5px;
+    outline: none; 
+}
+label{
+    font-weight: bold;
+}
+
+input:focus {
+    border: none;
+}
+

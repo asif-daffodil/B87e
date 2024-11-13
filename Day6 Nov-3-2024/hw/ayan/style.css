@@ -1,0 +1,107 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+    height: auto;
+    width: 70%;
+    margin-left: 15%;
+    background-color: aquamarine;
+    display: flex;
+    
+}
+.a{
+    height: 100px;
+    width: 100%;
+    display: flex;
+
+}
+
+.a1{
+    height: 100%;
+    width: 200px;
+    background-image:url(./img/pusy\ cat.jpeg);
+    
+}
+.a2{
+    height: 100px;
+    width: 400px;
+    margin-left: 500px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.b{
+    height: 30px;
+    width: 70%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    margin-left: 15%;
+}
+.c{
+    height: 600px;
+    width: 70%;
+    margin-left: 15%;
+    background-image: url(./img/eyes.webp);
+
+}
+.d{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;    
+}
+.e{
+    height: 200px;
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+}
+.e1{
+        height: 200px;
+        width: 25%;
+        
+}
+.e2{
+    height: 200px;
+    width: 25%;
+    margin-left: 80px;
+            
+}
+
+.e3{
+    height: 200px;
+    width: 25%;
+    margin-left: 80px;
+    
+}
+.f{
+    width: 70%;
+    margin-left: 30%;
+    text-align:center;
+    display:flex;
+}
+.g{
+    width: 40%;
+    text-align:center; 
+    margin-top: 70px;
+    justify-content: center;
+}
+.h{
+    height: 300px;
+    width: 800px;
+    justify-content: center;
+    margin: auto;
+}
+.j{
+    height: 30px;
+    width: 800px;
+    color: aliceblue;
+    background-color: black;
+    justify-content: center;
+    margin: auto;
+} 
+

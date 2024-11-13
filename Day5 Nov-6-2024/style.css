@@ -1,0 +1,48 @@
+.container{
+    color: green;
+    font-size: 20px;
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    background-color: lightgreen;
+}
+
+#ayan {
+    text-align: center;
+    line-height: 200px;
+}
+
+/* this is a comment */
+
+.text{
+    color: red;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: arial;
+    letter-spacing: 6px;
+    text-align: center;
+    word-spacing: 10px;
+    text-shadow: 3px 3px 3px black;
+    /* text-transform: uppercase; */
+    /* text-decoration: line-through; */
+    font-variant: small-caps;
+    /* stroke */
+    /* text-indent: 50px; */
+    -webkit-text-stroke: 1px blue;
+}
+
+.dipti {
+    border: 1px solid black;
+    width: max-content;
+    padding: 20px 50px;
+    margin: 20px auto;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 6px;
+}
+
+.hdp {
+    display: inline;
+}
