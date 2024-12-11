@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$normalTextColor : #333;
+@mixin flexCenter ($ac, $jc){
+    align-content: $ac;
+    justify-items: $jc;
+}
+
+.abul {
+    width: 300px;
+    height: 200px;
+    background: green;
+    @include flexCenter(center, center);
+    border: 1px solid #000;
+    position: relative;
+    margin: 20px auto;
+    >.babul{
+        width: 120px;
+        height: 120px;
+        background: red;
+        border-radius: 50%;
+    }
+    &:hover{
+        background: #fff;
+        &::before{
+            content: "Japan";
+        }
+    }
+    &::before {
+        content: "Bangladesh";
+        position: absolute;
+        top: 100%;
+        left: -1px;
+        width: 100%;
+        border: 1px solid #000;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+.demo {
+    width: 100%;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+.memo {
+    @extend .demo;
+    background: #f00;
+}

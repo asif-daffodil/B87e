@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.mainNav {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 20px;
+    background: #ccc;
+    box-shadow: 0 0 10px #000;
+    border-bottom: 1px solid #333;
+    position: relative;
+    z-index: 10;
+    >.logo{
+        >img{
+            width: 100px;
+        }
+    }
+    >.menuBar{
+        list-style: none;
+        display: grid;
+        grid-auto-flow: column; 
+        justify-content: end;
+        align-items: center;
+        gap: 40px;
+        li{
+            position: relative;
+            a{
+                text-decoration: none;
+                color: #3c3c3c;
+                font-size: larger;
+                transition: all 0.5s;
+            }
+            &::before{
+                content: "";
+                width: 0%;
+                height: 1px;
+                background: #3c3c3c;
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                visibility: hidden;
+                transition: all 0.5s;
+                transform: translateX(-50%);
+                box-shadow: 0 0 3px lightskyblue;
+            }
+            &:hover{
+                &::before{
+                    visibility: visible;
+                    width: 100%;
+                }
+                a{
+                    color: #000;
+                }
+                .subMenu{
+                    visibility: visible;
+                    opacity: 1;
+                    top: calc(100% + 11px);
+                }
+            }
+            .subMenu{
+                list-style: none;
+                position: absolute;
+                top: 260%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #ccc;
+                text-align: center;
+                width: 200px;
+                display: grid;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 20px;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.5s;
+                >li{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

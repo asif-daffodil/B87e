@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+}
+.firstDiv, .secondDiv, .thirdDiv, .forthDiv, .fifthDiv {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    margin: 20px;
+    transition: 1s;
+}
+
+.firstDiv:hover {
+    transform: translate(50px, 50px);
+}
+
+.secondDiv:hover {
+    transform: rotate(180deg);
+}
+
+.thirdDiv:hover {
+    transform: scale(1.5);
+}
+
+.forthDiv:hover {
+    transform: skew(30deg, 30deg);
+}
+
+.fifthDiv:hover {
+    transform: rotate(30deg) scale(1.2) skew(15deg, 15deg) translate(50px, 50px);
+}

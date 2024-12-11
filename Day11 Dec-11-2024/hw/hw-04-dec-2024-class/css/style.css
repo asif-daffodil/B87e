@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    padding: 30px 50px;
+    background-color: #0a3d62;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    max-width: 100%;
+}
+
+.sub-main{
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+.sub-main:hover{
+    opacity: 0.7;
+}
+.sub-main img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    padding: 20px 20px 30px ;
+    background-color: #fff;
+}
+.content p{
+    margin-top: 30px;
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

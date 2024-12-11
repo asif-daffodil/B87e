@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ddd, #444);
+}
+
+.container {
+    text-align: center;
+    padding: 80px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+.header {
+    position: relative;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: 5px dashed #3c8dff;
+    border-radius: 15px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+
+
+    background-image: url('https://blog.allbanglanewspaper.co/wp-content/uploads/Jaflong-Sylhet.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientSlide 5s linear infinite;
+    animation: shadowPulse 1.5s infinite alternate; /* Pulsing shadow animation */
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes gradientSlide {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+
+@keyframes shadowPulse {
+    0% {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+}

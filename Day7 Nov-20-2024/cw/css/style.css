@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 300px;
+    height: 200px;
+    background: #0a0;
+    margin: 20px;
+    display: flex;
+    /* justify-content: start; */
+    /* align-items: start; */
+}
+
+.pain {
+    width: 140px;
+    height: 140px;
+    background: red;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.baba {
+    width: max-content;
+    background: #fac;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.chele {
+    width: 300px;
+    height: 300px;
+    background: cornflowerblue;
+}
+
+.meye {
+    width: 300px;
+    height: 300px;
+    background: hotpink;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+.meye > button {
+    width: 100px;
+    padding: 10px;
+    background: #0a0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pranto {
+    width: 100%;
+    background: limegreen;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ayan, .rayan {
+    width: 30%;
+    height: 100px;
+    background: #f00;
+}
