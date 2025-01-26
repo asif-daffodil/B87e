@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Show Password</h1>
+    <form action="" id="myForm">
+        <input type="password" name="password" id="password" placeholder="Enter Password">
+        <span style="color: red;" id="showPassErr"></span>
+        <br><br>
+        <input type="checkbox" name="show" id="show">Show Password
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="showPass" style="color: green; margin-top: 30px;"></div>
+    <script>
+        const show = document.getElementById('show');
+        const password = document.getElementById('password');
+        const myForm = document.getElementById('myForm');
+        const showPass = document.getElementById('showPass');
+        const showPassErr = document.getElementById('showPassErr');
+
+        show.addEventListener("change", () =>{
+            if(show.checked){
+                password.setAttribute('type', 'text');
+            }else{
+                password.setAttribute('type', 'password');
+            }
+        });
+
+        myForm.addEventListener("submit", (e) =>{
+            e.preventDefault();
+            if(password.value === ''){
+                showPassErr.innerHTML = "Please Enter Password";
+                showPass.innerHTML = '';
+                return;
+            }
+            showPassErr.innerHTML = '';
+            showPass.innerHTML = "Your Password : " + password.value;
+            myForm.reset();
+        });
+    </script>
+</body>
+</html>
