@@ -4,10 +4,12 @@ import logo from "../assets/images/readymadeui.svg";
 import shortLogo from "../assets/images/readymadeui-short.svg";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRouter } from 'next/navigation'
 
 
 const Header = () => {
     const pathname = usePathname();
+    const router = useRouter();
     return (
         <header className='flex shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
             <div className='flex flex-wrap items-center justify-between gap-5 w-full'>
@@ -40,8 +42,8 @@ const Header = () => {
                         <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><Link href='./about'
                             className={pathname == '/about' ? 'text-[#007bff] block font-semibold text-[15px]':'hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'}>About</Link>
                         </li>
-                        <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
-                            className='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Feature</a>
+                        <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><Link href='./feature'
+                            className={pathname == '/feature' ? 'text-[#007bff] block font-semibold text-[15px]':'hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'}>Feature</Link>
                         </li>
                         <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
                             className='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Blog</a>
@@ -54,9 +56,9 @@ const Header = () => {
 
                 <div className='flex max-lg:ml-auto space-x-4'>
                     <button
-                        className='px-4 py-2 text-sm rounded-full font-bold text-gray-500 border-2 bg-transparent hover:bg-gray-50 transition-all ease-in-out duration-300'>Login</button>
+                        className={pathname == '/login' ? 'px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-[#007bff] bg-[#007bff] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#4b6888]':'px-4 py-2 text-sm rounded-full font-bold text-gray-500 border-2 bg-transparent hover:bg-gray-50 transition-all ease-in-out duration-300'} onClick={()=> router.push('/login')}>Login</button>
                     <button
-                        className='px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-[#007bff] bg-[#007bff] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#007bff]'>Sign
+                        className={pathname == '/sign-up' ? 'px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-[#007bff] bg-[#007bff] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#4b6888]':'px-4 py-2 text-sm rounded-full font-bold text-gray-500 border-2 bg-transparent hover:bg-gray-50 transition-all ease-in-out duration-300'} onClick={()=> router.push('/sign-up')}>Sign
                         up</button>
 
                     <button id="toggleOpen" className='lg:hidden'>

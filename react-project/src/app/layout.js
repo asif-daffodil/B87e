@@ -1,8 +1,10 @@
 
 export const metadata = {
   icons: {
-    icon: "/fav.png",
-  }
+    icon: '/fav.png', // Default favicon
+    shortcut: '/fav.png', // Optional: For smaller icons
+    apple: '/fav.png', // Optional: For Apple devices
+  },
 };
 import Header from "@/components/Header";
 import "./globals.css";
