@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "9958",
+      "title": "We are learning API",
+      "details": "this is a demo description. plase do not read it. Because it will kill your valuable time.this is a demo description. plase do not read it. Because it will kill your valuable time.this is a demo description. plase do not read it. Because it will kill your valuable time.this is a demo description. plase do not read it. Because it will kill your valuable time."
+    },
+    {
+      "id": "d800",
+      "title": "Hukka hoya",
+      "details": "this is a demo description. plase do not read it. Because it will kill your valuable time.this is a demo description. plase do not read it. Because it will kill your valuable time.this is a demo description. plase do not read it. Because it will kill your valuable time.this is a demo description. plase do not read it. Because it will kill your valuable time."
+    }
+  ],
+  "users": [
+    {
+      "id": "6c63",
+      "name": "Ifti Chowdhury",
+      "city": "Chowdhury Villa",
+      "gender": "Male"
+    }
+  ]
+}

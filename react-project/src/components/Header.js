@@ -45,8 +45,8 @@ const Header = () => {
                         <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><Link href='./feature'
                             className={pathname == '/feature' ? 'text-[#007bff] block font-semibold text-[15px]':'hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'}>Feature</Link>
                         </li>
-                        <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
-                            className='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Blog</a>
+                        <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><Link href='/blog'
+                            className={pathname == '/blog' ? 'text-[#007bff] block font-semibold text-[15px]':'hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'}>Blog</Link>
                         </li>
                         <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
                             className='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Contact</a>

@@ -1,0 +1,55 @@
+{
+  "name": "@tinyhttp/logger",
+  "version": "2.1.0",
+  "type": "module",
+  "description": "Minimal and flexible HTTP logger.",
+  "homepage": "https://github.com/tinyhttp/logger#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinyhttp/logger.git"
+  },
+  "engines": {
+    "node": ">=14.18 || >=16.20"
+  },
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./filelogger": {
+      "import": "./dist/filelogger.js",
+      "types": "./dist/filelogger.d.ts"
+    }
+  },
+  "keywords": ["tinyhttp", "node.js", "web framework", "web", "backend"],
+  "author": "v1rtl",
+  "license": "MIT",
+  "files": ["dist"],
+  "dependencies": {
+    "colorette": "^2.0.20",
+    "dayjs": "^1.11.13",
+    "http-status-emojis": "^2.2.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run --dir tests",
+    "test:coverage": "vitest run --dir tests --coverage",
+    "check": "biome check",
+    "check:fix": "biome check --write",
+    "prepare": "bunx husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@tinyhttp/app": "^2.5.2",
+    "@types/node": "^20.17.22",
+    "@vitest/coverage-v8": "^3.0.7",
+    "husky": "^9.1.7",
+    "supertest-fetch": "^2.0.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}

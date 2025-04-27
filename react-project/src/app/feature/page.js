@@ -1,15 +1,17 @@
-"use client"
-import React, { useState } from 'react';
+import FeatureComponent from "@/components/FeatureComponent";
 
-const page = () => {
-    const [num, setNum] = useState(0);
-    return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px', padding: '100px', margin: '50px auto' }}>
-            <button onClick={() => setNum(num + 1)} style={{ padding: '10px', fontSize: '16px' }}>+</button>
-            <span style={{ fontSize: '20px' }}>{num}</span>
-            <button onClick={() => setNum(num - 1)} style={{ padding: '10px', fontSize: '16px' }}>-</button>
-        </div>
-    );
+export const metadata = {
+  title: 'Feature',
+  description: 'This is my Next.js application using app routing.',
 };
 
-export default page;
+const Page = () => {
+
+  return (
+    <>
+        <FeatureComponent />
+    </>
+  );
+};
+
+export default Page;
